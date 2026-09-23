@@ -1,0 +1,32 @@
+datasets:
+  item_master:
+    path: sample_data/item_master.csv
+    checks:
+      not_null: [item_id, description, uom, item_class]
+      unique_key: [item_id]
+      allowed_values:
+        uom: [EA, CS, KG, LT]
+        item_class: [A, B, C]
+      non_negative: [shelf_life_days]
+
+  location_master:
+    path: sample_data/location_master.csv
+    checks:
+      not_null: [location_id, location_name, region]
+      unique_key: [location_id]
+      allowed_values:
+        location_type: [PLANT, HUB, BRANCH]
+
+  sales_history:
+    path: sample_data/sales_history.csv
+    checks:
+      not_null: [item_id, location_id, period, quantity]
+      unique_key: [item_id, location_id, period]
+      non_negative: [quantity]
+      referential_integrity:
+        - column: item_id
+          references: item_master
+          referenced_column: item_id
+        - column: location_id
+          references: location_master
+          referenced_column: location_id
