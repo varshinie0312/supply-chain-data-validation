@@ -1,0 +1,19 @@
+location_id,location_name,location_type,region
+LOC001,Plant 1,PLANT,North
+LOC002,Plant 2,PLANT,South
+LOC003,Hub 3,HUB,North
+LOC004,Hub 4,HUB,South
+LOC005,Hub 5,HUB,West
+LOC006,Hub 6,HUB,East
+LOC007,Branch 7,BRANCH,West
+LOC008,Branch 8,BRANCH,East
+LOC009,Branch 9,BRANCH,West
+LOC010,Branch 10,BRANCH,South
+LOC011,Branch 11,BRANCH,South
+LOC012,Branch 12,BRANCH,North
+LOC013,Branch 13,BRANCH,South
+LOC014,Branch 14,BRANCH,South
+LOC015,Branch 15,BRANCH,South
+LOC016,Branch 16,BRANCH,South
+LOC017,Branch 17,BRANCH,North
+LOC018,Branch 18,BRANCH,West
